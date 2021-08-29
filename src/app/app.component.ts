@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'exam-practice';
+  header = 'My Revision Class';
+  gender: number = 1
+  male = 0;
+  female = 1;
+  transgender = 2;
+  
+  changestyle()
+{
+  console.log('click')
+}
 }

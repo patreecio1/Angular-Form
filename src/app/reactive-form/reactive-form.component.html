@@ -1,0 +1,29 @@
+<div class="container">
+      <div class="row">
+       <form action="" [formGroup]="userForm">
+        <div class="form-group">
+        <label for="">Firstname</label>
+        <input
+            formControlName="firstname"
+             name="firstname" type="text"
+              class="form-control"
+              >
+        </div>
+        <div class="form-group">
+         <label for="">Lastname</label>
+          <input name="lastname"
+          formControlName="lastname"
+          type="text" class="form-control">
+      </div>
+    
+  <div  class="form-group" style="padding-top: 1em; text-align: right;">
+        <button
+    
+        type="button" class="btn btn-primary" (click)="submit()" >Submit</button>
+      </div>
+    
+        </form>
+      </div>
+    </div>
+
+    <router-outlet></router-outlet>
